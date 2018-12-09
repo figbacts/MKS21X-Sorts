@@ -45,12 +45,14 @@ public static boolean checkArray(int [] ary){
 }
 
   public static void main(String[] args) {
- if (args.length > 0){
    int length = Integer.parseInt(args[0]);
+ int ary[];
+ ary = new int[length];
+ Random rand = new Random();
+ for (int i = 0; i < ary.length; i ++){
+   ary[i] = rand.nextInt();
  }
- 
-
-
-
+bubbleSort(ary);
+System.out.println(checkArray(ary));
   }
 }
