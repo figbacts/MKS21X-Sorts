@@ -1,5 +1,5 @@
  import java.util.Random;
-public class Sort{
+public class Sorts{
   public static void selectionSort(int [] ary){
     for(int i = 0; i < ary.length; i ++){
       int smallindex = i;
