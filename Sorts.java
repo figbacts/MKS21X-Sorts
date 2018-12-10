@@ -28,6 +28,21 @@ public class Sorts{
       index = index - 1;
     }
   }
+  public static void insertionSort(int [] ary){
+    int spotholder = 0;
+    for (int i = 1; i < ary.length; i ++){
+      spotholder = ary[i];
+      for (int j = i; j > 0; j ++){
+
+      }
+    }
+  }
+
+
+
+
+
+
   public static String printArray(int[] ary) {
     String output = "[";
     for(int i=0; i<ary.length-1; i++) {
