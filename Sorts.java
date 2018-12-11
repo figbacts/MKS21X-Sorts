@@ -32,11 +32,16 @@ public class Sorts{
     int spotholder = 0;
     for (int i = 1; i < ary.length; i ++){
       spotholder = ary[i];
-      for (int j = i; j > 0; j ++){
-
+      int c = i-1;
+      while(c > -1 && spotholder < ary[c]){
+        ary[c+1]= ary[c];
+        c--;
+        }
+        ary[c+1] = spotholder;
       }
-    }
-  }
+      }
+
+
 
 
 
@@ -65,9 +70,9 @@ public static boolean checkArray(int [] ary){
  ary = new int[length];
  Random rand = new Random();
  for (int i = 0; i < ary.length; i ++){
-   ary[i] = rand.nextInt();
+   ary[i] = rand.nextInt() % 10;
  }
-bubbleSort(ary);
+insertionSort(ary);
 System.out.println(checkArray(ary));
   }
 }

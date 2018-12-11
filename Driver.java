@@ -17,9 +17,11 @@ public class Driver{
     if(artie[1].equals("test")){
       int[] randish2 = Arrays.copyOf(randish,randish.length);
       int[] randish3 = Arrays.copyOf(randish,randish.length);
+      int[] randish4 = Arrays.copyOf(randish,randish.length);
       Sorts.selectionSort(randish);
       Sorts.bubbleSort(randish2);
       Arrays.sort(randish3);
+      Sorts.insertionSort(randish4);
       if( Arrays.equals(randish,randish3)){
         System.out.println("Selection Correct!");
       }else{
@@ -29,6 +31,11 @@ public class Driver{
         System.out.println("Bubble Correct!");
       }else{
        System.out.println("Bubble BROKEN!!!!");
+      }
+      if( Arrays.equals(randish4,randish3)){
+        System.out.println("Insertion Correct!");
+      }else{
+       System.out.println("Insertion BROKEN!!!!");
       }
     }
   }
